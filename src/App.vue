@@ -2,6 +2,8 @@
 import { ref } from "vue";
 import { invoke } from "@tauri-apps/api/core";
 import { supabase } from "./lib/supabase";
+import { onMounted } from "vue";
+import { openUrl } from "@tauri-apps/plugin-opener";
 
 const nameConfig = ref("");
 const alertMessage = ref("");
@@ -92,6 +94,21 @@ function closeAlertWindow() {
     enableAlert.value = false;
     alertMessage.value = "";
 }
+
+async function openSettingsList() {
+    await openUrl("https://www.google.com");
+}
+
+// Desabilitar o context menu
+onMounted(() => {
+    document.addEventListener(
+        "contextmenu",
+        (e) => {
+            e.preventDefault();
+        },
+        false,
+    );
+});
 </script>
 
 <template>
@@ -120,9 +137,7 @@ function closeAlertWindow() {
                 </button>
             </div>
         </form>
-        <a class="link-action" href="https://www.google.com" target="_blank"
-            >Open DB</a
-        >
+        <button class="link-action" @click="openSettingsList">Open DB</button>
     </main>
     <div class="alert-messages" :class="{ on: enableAlert }">
         <div class="center">

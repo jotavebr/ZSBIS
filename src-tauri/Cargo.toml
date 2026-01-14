@@ -1,11 +1,11 @@
 [package]
-name = "zed_backup_configs"
+name = "zsbis"
 version = "1.0.0"
 authors = ["jotave"]
 edition = "2021"
 
 [lib]
-name = "zed_backup_configs_lib"
+name = "zsbis_lib"
 crate-type = ["staticlib", "cdylib", "rlib"]
 
 [build-dependencies]

@@ -5036,20 +5036,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "zed_backup_configs"
-version = "1.0.0"
-dependencies = [
- "dirs",
- "json5",
- "json_comments",
- "serde",
- "serde_json",
- "tauri",
- "tauri-build",
- "tauri-plugin-opener",
-]
-
-[[package]]
 name = "zerocopy"
 version = "0.8.33"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -5128,6 +5114,20 @@ name = "zmij"
 version = "1.0.14"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "bd8f3f50b848df28f887acb68e41201b5aea6bc8a8dacc00fb40635ff9a72fea"
+
+[[package]]
+name = "zsbis"
+version = "1.0.0"
+dependencies = [
+ "dirs",
+ "json5",
+ "json_comments",
+ "serde",
+ "serde_json",
+ "tauri",
+ "tauri-build",
+ "tauri-plugin-opener",
+]
 
 [[package]]
 name = "zvariant"

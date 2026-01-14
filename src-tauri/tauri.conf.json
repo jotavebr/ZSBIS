@@ -1,8 +1,8 @@
 {
   "$schema": "https://schema.tauri.app/config/2",
-  "productName": "zed_backup_configs",
+  "productName": "zsbis",
   "version": "1.0.0",
-  "identifier": "Zed-Backup-Configs",
+  "identifier": "ZSBIS",
   "build": {
     "beforeDevCommand": "bun run dev",
     "devUrl": "http://localhost:1420",
@@ -12,12 +12,13 @@
   "app": {
     "windows": [
       {
-        "title": "Zez Backup Configs",
+        "title": "ZSBIS",
         "width": 450,
         "height": 170,
         "resizable": false,
         "maximizable": false,
         "contentProtected": false,
+        "center": true,
         "visible": true
       }
     ],

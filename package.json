@@ -13,6 +13,7 @@
     "@supabase/supabase-js": "^2.90.1",
     "@tauri-apps/api": "^2",
     "@tauri-apps/plugin-opener": "^2",
+    "@tauri-apps/plugin-shell": "^2.3.4",
     "comment-json": "^4.5.1",
     "vue": "^3.5.13"
   },
