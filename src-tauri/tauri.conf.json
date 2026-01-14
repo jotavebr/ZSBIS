@@ -1,0 +1,33 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "zed_backup_configs",
+  "version": "1.0.0",
+  "identifier": "Zed-Backup-Configs",
+  "build": {
+    "beforeDevCommand": "bun run dev",
+    "devUrl": "http://localhost:1420",
+    "beforeBuildCommand": "bun run build",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "windows": [
+      {
+        "title": "Zez Backup Configs",
+        "width": 450,
+        "height": 170,
+        "resizable": false,
+        "maximizable": false,
+        "contentProtected": false,
+        "visible": true
+      }
+    ],
+    "security": {
+      "csp": null
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": "all",
+    "icon": ["icon.ico"]
+  }
+}
